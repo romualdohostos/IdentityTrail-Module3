@@ -6,7 +6,7 @@ global class Module3RegistrationHandler implements Auth.RegistrationHandler{
     private static final String ORG_SUFFIX = '.sso.badge.org';
     private static final String DEFAULT_ACCOUNTNAME = 'Partners';
     private static final String EXTERNAL_USER_PROFILE = 'Partners';
-    private static final String INTERNAL_USER_PROFILE = 'Standard User';  
+    private static final String INTERNAL_USER_PROFILE = 'System Administrator';  
     private static final String TZSID = [SELECT timezonesidkey from User where profile.name = 'System Administrator' LIMIT 1].timezonesidkey;
     
 /**
